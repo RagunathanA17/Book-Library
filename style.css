@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color:rgb(91, 72, 220);
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main-container{
+    padding: 10px;
+    margin: 10px;
+} 
+*
+.main-container .property input{
+    background-color: rgb(182, 235, 237);
+    border-radius: 10px;
+    padding: 2px 0 2px 5px;
+}
+
+.main-container .property h3{
+    font-size: 400;
+    font-weight: bold;
+}
+
+.main-container .property input{
+    min-width: 96%;
+    margin: 2px 0 3px 2px;
+}
+
+.main-container .property input{
+    outline: none;
+}
+
+.main-container .property input{
+    border: none;
+    border-radius: 10px solid rgb(175, 15, 15);
+}
+
+.main-container .property button{
+    margin: 5px 0 2px 4px;
+    color: whitesmoke;
+    background-color: rgb(255, 68, 0, 0.7);
+    padding: 3px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.main-container .property button{
+    cursor: pointer;
+    pointer-events: fill;
+}
+
+.main-container .property .display{
+    background-color: rgb(255, 166, 0, 0.6);
+    padding: 2px;
+    margin: 4px;
+    border-radius: 4px;
+}
+
+.main-container .property .display .display-text{
+    margin-left: 6px;
+}
+
+.main-container .property .display .strick{
+    background-color: rgba(14, 139, 248, 0.7);
+    padding:3px 5px 3px 5px;
+}
+
+.main-container .property .display .del{
+    background-color: rgba(248, 14, 14, 0.6);
+    width: 90px;
+}
+
+
+
