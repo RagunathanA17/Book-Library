@@ -37,12 +37,10 @@ addbtn.addEventListener("click", ()=>{
     div.innerHTML = `
                 <p id="display-text" class="display-text; style="text-decoration: line-through;"> Book Title: ${input1.value} <br> Book Author was ${input2.value} <br> </p>
                     <button class="strick" id="strick">Mark as Read</button>
-                    <button class="del" id="del">Delete</button>
+                    <button class="del" id="del" onclick="remove(event)">Delete</button>
                     `
-                    
+
     bookpro.append(div);
 
 })
-
-
 
