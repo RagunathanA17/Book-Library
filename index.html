@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,22 +11,33 @@
     <div class="main-container">
         <div class="property" id="bookproperty">
             <h3>Book Library</h3>
-            <input placeholder="Book Title" id="num1" type="text">
-            <input type="text" placeholder="Book Author" id="num2">
-            <button id="addbtn">Add Book</button>
+            <input placeholder="Book Title" id="num1" type="text" required>
+            <input type="text" placeholder="Book Author" id="num2" required>
+            <button id="addbtn">Add your Book</button>
 
             <div class="display" id="display" style="display: none;">
-                <p id="display-text" class="display-text;">These are the well</p>
-                <button class="strick" id="strick">Mark as Read</button>
+                <p id="display-text" class="display-text;">Sample Demo for you to <span style="text-decoration: line-through;
+                 color: rgba(14, 139, 248, 0.7);">Strick</span> 
+                 & <span style="color: red;">Delete</span>
+                </p>
+
+                <button class="strick" id="strick" onclick="Strick(event)">Mark as Read</button>
                 <button class="del" id="del">Delete</button>
             </div>
 
-        </div>
+        </div>    
     </div>
-    
-    <script src="script.js">
 
+    <section>
+        <h4><SPAN>These is<SPAN style="border: none; color: brown;">RAGUNATHAN A</SPAN></SPAN></h4>
+        <span style="margin-bottom: 10px; border-top:none; background-color: rgb(182, 235, 237);">Recently Completed Master of </span>
+        <span style="margin-top: 4px; text-transform: uppercase; color: brown; font-weight: bolder;">Computer Application</span>
+    </section>
+
+    <script src="script.js">
+        
     </script>
+
 </body>
 
 </html>

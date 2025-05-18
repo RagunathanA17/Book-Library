@@ -6,9 +6,10 @@
 
 body{
     display: flex;
-    background-color:rgb(91, 72, 220);
+    background-color:rgb(8, 66, 128);
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .main-container{
@@ -83,5 +84,33 @@ body{
     width: 90px;
 }
 
+.main-container .display .display-text{
+    text-decoration: line-through;
+}
 
+/*footer tag*/
+section h4{
+    color: cadetblue;
+    font-display:inherit;
+}
+section h4 span{
+    padding: 5px;
+}
 
+/* section{
+    margin: 5px;
+    padding: 10px;
+    width: 340px;
+    font-size: large; 
+    color: rgb(12, 153, 137); 
+} */
+
+section span{
+    margin-left: 15px;
+    color: rgb(30, 20, 2);
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 3px;
+}

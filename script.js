@@ -2,7 +2,7 @@ let addbtn = document.getElementById('addbtn');
 let display = document.getElementById('display');
 let del = document.getElementById('del')
 let strick = document.getElementById('strick')
-let displaytxt = document.getElementById('display-text')
+let displaytxt = document.querySelectorAll('.display-text')
 let bookpro = document.getElementById('bookproperty')
 
 //Two input value
@@ -21,26 +21,41 @@ addbtn.addEventListener("click", () => {
 })
 
 // to strick the content
-strick.addEventListener("click", () => {
-    displaytxt.style.textDecoration = "line-through";
-})
+// strick.addEventListener("click", () => {
+//     displaytxt.style.textDecoration = "line-through";
+// })
 
 // To delete the parent element.
 del.addEventListener("click", () => {
     display.style.display = "none";
 })
 
+
 addbtn.addEventListener("click", ()=>{
     let div = document.createElement("div");
     div.setAttribute("class", "display")
     div.setAttribute("id", "display")
     div.innerHTML = `
-                <p id="display-text" class="display-text; style="text-decoration: line-through;"> Book Title: ${input1.value} <br> Book Author was ${input2.value} <br> </p>
-                    <button class="strick" id="strick">Mark as Read</button>
-                    <button class="del" id="del" onclick="remove(event)">Delete</button>
+                <p id="display-text" class="display-text; style="text-decoration: line-through;
+                "> Book Title: ${input1.value} <br>
+                 Book Author was: ${input2.value} <br>
+                </p>
+                    
+                <button class="strick" id="strick" onclick="Strick(event)">Mark as Read</button>
+                <button class="del" id="del" onclick="remove(event)">Delete</button>
                     `
 
     bookpro.append(div);
-
 })
 
+//Here I removed a parent COntainer
+function remove(event){
+    event.target.parentNode.remove()   
+}
+
+
+//Here I used event object to strick the text by using a CSS style.
+function Strick(event){
+    event.target.parentNode.style.textDecoration = "line-through"
+
+}
