@@ -21,10 +21,6 @@ addbtn.addEventListener("click", () => {
 })
 
 // to strick the content
-// strick.addEventListener("click", () => {
-//     displaytxt.style.textDecoration = "line-through";
-// })
-
 // To delete the parent element.
 del.addEventListener("click", () => {
     display.style.display = "none";
